@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Veterinary Clinic</title>
-  <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/styles.css">
+  <!-- <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/styles.css"> -->
+  <link rel="stylesheet" href="./css/styles.min.css">
 </head>
 <body>
   <!-- site-top -->
@@ -157,17 +158,17 @@
         </li>
         
         
-         
-            <li class="services__item">
-              <a href="#" class="services__link">
+        
+        <li class="services__item">
+          <a href="#" class="services__link">
             <p class="services__desc">Первичный осмотр</p>
           </a>
-          </li>
-         
-         
+        </li>
+        
+        
       </ul>
       
-
+      
       <div class="services-content">
         <img class="services-content__photo" src="./img/cat-check.png" alt="CAT">
         
@@ -175,9 +176,9 @@
           <h2 class="service-content__header">Первичный осмотр</h2>
           <p class="service-content__desc">По условиям акции в нашей клинике предоставляетса безплатная услуга “Дневной стационар” которая позволяет экономить Ваше время. Вы имеете возможность оставить у нас.</p>
           <p class="service-content__desc desc-top">По условиям акции в нашей клинике предоставляетса безплатная услуга “Дневной стационар” которая позволяет экономить Ваше время. Вы имеете возможность оставить у нас.</p>
-
+          
           <a class="btn service-content__btn btn--yellow" href="#">Узнать цену</a>
-
+          
           <a class="btn service-content__btn btn--black service-black--btn" href="#">Записаться на приём</a>
         </div>
       </div>
@@ -188,11 +189,106 @@
     <div class="container subscribing-container">
       <h2 class="subscribing__header">Будь в курсе событий</h2>
       <form action="https://htmlacademy.ru" method="" class="subscribing__form">
-      <input type="email" name="email" aria-label="" minlength="3" required>
-      <button type="submit">Подписаться</button>
+        <input class="subscribing__input" placeholder="Укажите Ваш email адрес" type="email" name="email" aria-label="" minlength="3" required>
+        <button class="btn subscribing__btn" type="submit">Подписаться</button>
       </form>
     </div>
   </section>
+  
+  
+  <section class="rools">
+    <div class="container">
+      
+      <h2 class="rools__title">
+        Полезные статьи
+      </h2>
+      
+      
+      
+    </div>
+  </section>
+
+
+  <section class="map">
+   <div class="container map__container">
+
+    <div class="map__item" style="position:relative;overflow:hidden;"><a href="https://yandex.com/maps/org/najot_ta_lim/206616411269/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Najot Ta'lim</a><a href="https://yandex.com/maps/10335/tashkent/category/educational_center/184106168/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Educational center in Tashkent</a><iframe class="map__inner" src="https://yandex.com/map-widget/v1/-/CCUeMOso1B" width="462" height="655"  style="position:relative;"></iframe></div>
+
+    <div class="map__content">
+      <form class="map__form" action="https://htmlacademy.ru" method="POST">
+      <h2 class="map__header">Обратная связь</h2>
+      <p class="map__desc">При возникновении вопросов по поводу работы клиники или консультаций, заполните форму ниже:</p>
+      <input  class="name-input" name="name"  type="name" aria-label="name" 
+      placeholder="Ваше имя" required>
+  
+      <input  class="email-input" name="email"  type="email" aria-label="email" 
+      placeholder="Email для обратной связи" required>
+     
+      <textarea class="textarea-input" name="text"  type="text" aria-label="email" placeholder="Опишите Ваш вопрос. " required>Например: в каком возрасте можно прививать от бешенства?</textarea>
+  
+      <a class="btn map--btn" href="#">Задать нам вопрос</a>
+      
+    </form>
+  
+    </div>
+
+   </div>
+  </section>
+  
+  
+  
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__wrapper">
+        <a href="#" class="site-footer__logo"><img src="./img/logo-pet.svg" alt="LOGO"></a>
+        
+        <ul class="site-footer__list">
+          <li class="site-footer__item"><a class="site-footer__link" href="">Главная</a></li>
+          
+          <li class="site-footer__item"><a class="site-footer__link" href="">О Клинике</a></li>
+          
+          <li class="site-footer__item"><a class="site-footer__link" href="">Наши Услуги</a></li>
+        </ul>
+        
+        
+        <div class="site-footer__list">
+          <li class="site-footer__item"><a class="site-footer__link" href="">Полезные Статьи</a></li>
+          
+          
+          <li class="site-footer__item"><a class="site-footer__link" href="">FAQ</a></li>
+          
+          
+          <li class="site-footer__item"><a class="site-footer__link" href="">Контакты</a></li>
+        </div>
+        
+        <div class="footer-date">
+          <p class="date-wrapper__items"><b>Пн - Пт</b> 8:00 - 18:00</p>
+          <p class="date-wrapper__items"><b>Сб - Вс</b> 8:00 - 14:00</p>
+          
+        </div>
+        
+        <address class="site-footer__address">
+          г. Мариуполь, проспект Победы, 48а
+        </address>
+        
+        
+        <ul class="site-footer__right">
+          <li class="site-footer__tell">
+            <a class="site-footer__num" href="tel:(067) 634 -75 - 74">(067) 634 -75 - 74</a>
+          </li>
+          
+          <li class="site-footer__tell">
+            <a class="site-footer__num" href="tel:(067) 634 -75 - 74">(067) 634 -75 - 74</a>
+          </li>
+          
+          <li class="site-footer__tell">
+            <a class="site-footer__num" href="tel:(067) 634 -75 - 74">(067) 634 -75 - 74</a>
+          </li>
+        </ul>
+      </div>
+      <p class="site-end">© 2020 example. All Rights Reserved.</p>
+    </div>
+  </footer>
   
 </body>
 </html>
