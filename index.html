@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Veterinary Clinic</title>
-  <!-- <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/styles.css"> -->
-  <link rel="stylesheet" href="./css/styles.min.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/styles.css"> 
+  <!-- <link rel="stylesheet" href="./css/styles.min.css"> -->
 </head>
 <body>
   <!-- site-top -->
@@ -33,8 +33,8 @@
         </ul>
         
         <div class="site-head__date date-wrapper">
-          <p class="date-wrapper__items"><b>Пн - Пт</b> 8:00 - 18:00</p>
-          <p class="date-wrapper__items"><b>Сб - Вс</b> 8:00 - 14:00</p>
+          <p class="date-wrapper__items site-head__date--wrapper"><b>Пн - Пт</b> <time datetime="8:00 - 18:00">8:00 - 18:00</time></p>
+          <p class="date-wrapper__items site-head__date--wrapper"><b>Сб - Вс</b> <time datetime="8:00 - 18:00">8:00 - 18:00</time></p>
         </div>
       </div>
     </div>
@@ -56,7 +56,7 @@
         <div class="site-nav__middle">  
           <ul class="site-nav__list">
             
-            <li class="site-nav__item">
+            <li class="site-nav__item site-nav__item--active">
               <a class="site-nav__link nav-fish" href="#">Главная</a>
             </li>
             
@@ -65,7 +65,7 @@
             </li>
             
             <li class="site-nav__item">
-              <a class="site-nav__link" href="#">Наши Услуги</a>
+              <a class="site-nav__link" href="our-services.html">Наши Услуги</a>
             </li>
             
             <li class="site-nav__item">
@@ -73,7 +73,7 @@
             </li>
             
             <li class="site-nav__item">
-              <a class="site-nav__link" href="#">FAQ</a>
+              <a class="site-nav__link" href="faq.html">FAQ</a>
             </li>
             
             <li class="site-nav__item">
@@ -83,7 +83,7 @@
         </div>
         
         <div class="site-nav__question nav-question">
-          <a class="nav-question__link" href="#">Задать вопрос</a>
+          <a class="nav-question__link js-open-modal-button" href="#">Задать вопрос</a>
         </div>
         
       </div>
@@ -141,19 +141,19 @@
         
         <li class="services__item">
           <a href="#" class="services__link">
-            <p class="services__desc">Первичный осмотр</p>
+            <p class="services__desc">Хирургическое вмешательство</p>
           </a>
         </li>
         
         <li class="services__item">
           <a href="#" class="services__link">
-            <p class="services__desc">Первичный осмотр</p>
+            <p class="services__desc">Дерматология</p>
           </a>
         </li>
         
         <li class="services__item">
           <a href="#" class="services__link">
-            <p class="services__desc">Первичный осмотр</p>
+            <p class="services__desc">Лабораторная диагностика</p>
           </a>
         </li>
         
@@ -207,35 +207,35 @@
       
     </div>
   </section>
-
-
+  
+  
   <section class="map">
-   <div class="container map__container">
-
-    <div class="map__item" style="position:relative;overflow:hidden;"><a href="https://yandex.com/maps/org/najot_ta_lim/206616411269/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Najot Ta'lim</a><a href="https://yandex.com/maps/10335/tashkent/category/educational_center/184106168/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Educational center in Tashkent</a><iframe class="map__inner" src="https://yandex.com/map-widget/v1/-/CCUeMOso1B" width="462" height="655"  style="position:relative;"></iframe></div>
-
-    <div class="map__content">
-      <form class="map__form" action="https://htmlacademy.ru" method="POST">
-      <h2 class="map__header">Обратная связь</h2>
-      <p class="map__desc">При возникновении вопросов по поводу работы клиники или консультаций, заполните форму ниже:</p>
-      <input  class="name-input" name="name"  type="name" aria-label="name" 
-      placeholder="Ваше имя" required>
-  
-      <input  class="email-input" name="email"  type="email" aria-label="email" 
-      placeholder="Email для обратной связи" required>
-     
-      <textarea class="textarea-input" name="text"  type="text" aria-label="email" placeholder="Опишите Ваш вопрос. " required>Например: в каком возрасте можно прививать от бешенства?</textarea>
-  
-      <a class="btn map--btn" href="#">Задать нам вопрос</a>
+    <div class="container map__container">
       
-    </form>
-  
+      <div class="map__item"><a href="https://yandex.com/maps/10335/tashkent/category/educational_center/184106168/?utm_medium=mapframe&utm_source=maps" ></a><iframe class="map__inner" src="https://yandex.com/map-widget/v1/-/CCUeMOso1B"   style="position:relative;"></iframe></div>
+      
+      <div class="map__content">
+        <form class="map__form" action="https://htmlacademy.ru" method="POST">
+          <h2 class="map__header">Обратная связь</h2>
+          <p class="map__desc">При возникновении вопросов по поводу работы клиники или консультаций, заполните форму ниже:</p>
+          <input  class="name-input" name="name"  type="name" aria-label="name" 
+          placeholder="Ваше имя" required>
+          
+          <input  class="email-input" name="email"  type="email" aria-label="email" 
+          placeholder="Email для обратной связи" required>
+          
+          <textarea class="textarea-input" name="text"  type="text" aria-label="email" placeholder="Опишите Ваш вопрос. " required>Например: в каком возрасте можно прививать от бешенства?</textarea>
+          
+          <a class="btn map--btn" href="#">Задать нам вопрос</a>
+          
+        </form>
+        
+      </div>
+      
     </div>
-
-   </div>
   </section>
   
-  
+  <!-- FOOTER -->
   
   <footer class="site-footer">
     <div class="container">
@@ -250,7 +250,7 @@
           <li class="site-footer__item"><a class="site-footer__link" href="">Наши Услуги</a></li>
         </ul>
         
-        
+
         <div class="site-footer__list">
           <li class="site-footer__item"><a class="site-footer__link" href="">Полезные Статьи</a></li>
           
@@ -289,6 +289,36 @@
       <p class="site-end">© 2020 example. All Rights Reserved.</p>
     </div>
   </footer>
+
+
+  <!-- MODAL -->
+  
+  <section class="modal-section js-modal">
+    <div class="modal-section__wrapper modal">
+      <button type="button" class="modal-close__button js-close-modal-button"></button>
+        <div class="modal-inner">
+            <h2 class="visually-hidden">Задать вопрос</h2>
+             <div class="modal-inner__socials socials">
+                 <h3 class="socials__header">Авторизация:</h3>
+                 <a href="#" class="socials__links">Войти через Google</a>
+                 <a href="#" class="socials__links facebook-link">Войти через Facebook</a>
+             </div>
+
+            
+             <form class="modal-inner__form modal-form" action="" method="GET"> 
+                <h2 class="modal-form__header">Задать вопрос</h2>
+
+                 <input class="modal-form__name" type="name" name="name" placeholder="Ваше имя" aria-label="name" required>
+
+                 <textarea class="modal-form__textarea" name="Textarea" aria-label="textarea"  required>Опишите Ваш вопрос.</textarea>
+
+             <button class="modal-form__button btn" type="submit"> Отправить </button>
+
+             </form>
+        </div>
+    </div>
+</section>
   
 </body>
+<script src="./js/main.js"></script>
 </html>
