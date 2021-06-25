@@ -323,6 +323,11 @@ img {
     margin-right: 4px;
 }
 
+.nav-question__link:hover::after{
+    left: 25%;
+    /* right: 22%; */
+    width: 95px;
+}
 
 
 /* Section HERO */
@@ -1131,141 +1136,6 @@ img {
 
 
 
-/* MODAL ЗАДАТЬ ВОПРОС */
-
-.modal-section{
-    padding-top: 30px;
-    padding-left: 200px;
-    position: fixed;
-    z-index: 99;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255,255,255, 0.9);
-    display: none; 
-}
-
-.modal-open{
-    display: block;
-}
-
-.modal-close__button {
-    position: absolute;
-    background-image: url(../img/close-btn.svg);
-    width: 25px;
-    height: 18px;
-    background-repeat: no-repeat;
-    top: 20px;
-    left: 20px;
-    background-color: transparent;
-    border:none;
-    cursor: pointer;
-}
-
-
-
-.modal-section__wrapper{
-    background-image: url(../img/modal-bg-photo.png);
-    background-repeat: no-repeat;
-    width: 850px;
-
-    position: relative;
-}
-
-.modal-inner{
-    padding: 0 71px 30px 71px;
-    display: flex;
-}
-
-.modal-inner__socials{
-    padding-top: 148px;
-    display: flex;
-    flex-direction: column;
-}
-
-.socials__header{
-    color: var(--color-black);
-    margin: 0;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 21px;
-}
-
-.socials__links{
-    width: 238px;
-    margin: 0;
-    text-decoration:  none;
-    color: var(--color-black);
-    padding: 11px 36px 15px 64px;
-    white-space: nowrap;
-    background-color: var(--color-white);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 21px;
-}
-
-.socials__links~.socials__links{
-    margin-top: 21px;
-}
-
-.facebook-link{
-    padding: 11px 36px 15px 56px;
-}
-
-
-.modal-inner__form{
-    margin-top: 119px;  
-    margin-left: 133px;
-    display: flex;
-    flex-direction: column;
-}
-
-.modal-form__header{
-    font-size: 50px;
-    line-height: 54px;
-    color: var(--color-black);
-    margin: 0;
-    white-space: nowrap;
-    margin-bottom: 25px;
-}
-
-.modal-form__name{
-    padding: 16px 22px 13px 22px;
-    padding-left: 22px;
-    margin-bottom: 21px;
-}
-
-.modal-form__textarea{
-    padding: 17px 20px 127px 22px;
-    resize: none;
-    color: var(--color-text);
-    margin-bottom: 27px;
-}
-
-
-.modal-form__button{
-    width: 193px;
-    padding: 14px 67px 15px 55px;
-    background-color: var(--color-button-black);
-    color: var(--color-white);
-    border: none;
-    border-radius: 0;
-}
-
-.modal-form__button:hover{
-    background: rgba(51, 51, 51, 0.8);
-}
-
-.modal-form__button:active{
-    background: rgba(51, 51, 51, 0.6);
-}
-
-
-
-
-
 /* FAQ SECTION */
 .faq{
     padding-top: 118px;
@@ -1474,3 +1344,171 @@ margin-right: 6px;
   }
   
   
+
+  /* MODAL ЗАДАТЬ ВОПРОС */
+
+.modal-section{
+    padding-top: 30px;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255, 0.9);
+    display: none; 
+    overflow: auto;
+}
+
+.modal-open{
+    display: block;
+}
+
+.modal-close__button {
+    position: absolute;
+    background-image: url(../img/close-btn.svg);
+    width: 25px;
+    height: 18px;
+    background-repeat: no-repeat;
+    top: 20px;
+    left: 20px;
+    background-color: transparent;
+    border:none;
+    cursor: pointer;
+}
+
+.modal-section__wrapper{
+    background-image: url(../img/modal-bg-photo.png);
+    background-repeat: no-repeat;
+    width: 850px;
+   margin-left: auto;
+   margin-right: auto;
+    position: relative;
+}
+
+.modal-inner{
+    padding: 0 71px 30px 71px;
+    display: flex;
+}
+
+.modal-inner__socials{
+    padding-top: 148px;
+    display: flex;
+    flex-direction: column;
+}
+
+.socials__header{
+    color: var(--color-black);
+    margin: 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 21px;
+}
+
+.socials__links{
+    width: 238px;
+    margin: 0;
+    text-decoration:  none;
+    color: var(--color-black);
+    padding: 11px 36px 15px 64px;
+    white-space: nowrap;
+    background-color: var(--color-white);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.socials__links~.socials__links{
+    margin-top: 21px;
+}
+
+.facebook-link{
+    padding: 11px 36px 15px 56px;
+}
+
+
+.modal-inner__form{
+    margin-top: 119px;  
+    margin-left: 133px;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-form__header{
+    font-size: 50px;
+    line-height: 54px;
+    color: var(--color-black);
+    margin: 0;
+    white-space: nowrap;
+    margin-bottom: 25px;
+}
+
+.modal-form__name{
+    padding: 16px 22px 13px 22px;
+    padding-left: 22px;
+    margin-bottom: 21px;
+}
+
+.modal-form__textarea{
+    padding: 17px 20px 127px 22px;
+    resize: none;
+    color: var(--color-text);
+    margin-bottom: 27px;
+}
+
+
+.modal-form__button{
+    width: 193px;
+    padding: 14px 67px 15px 55px;
+    background-color: var(--color-button-black);
+    color: var(--color-white);
+    border: none;
+    border-radius: 0;
+}
+
+.modal-form__button:hover{
+    background: rgba(51, 51, 51, 0.8);
+}
+
+.modal-form__button:active{
+    background: rgba(51, 51, 51, 0.6);
+}
+
+
+.google-link::before{
+    content: "";
+    background-image: url(../img/google.svg);
+    display: block;
+    background-position: left center;
+    width: 50px;
+    height: 20px;
+    margin-left: -20px;
+    background-repeat: no-repeat;
+}
+.google-link{
+    display: flex;
+}
+
+.facebook-link::before{
+    content: "";
+    background-image: url(../img/facebook.svg);
+    display: block;
+    background-position: left center;
+    width: 50px;
+    height: 20px;
+    margin-left: -30px;
+    background-repeat: no-repeat;
+}
+
+.facebook-link{
+    display: flex;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .site-nav__logo {
+        width: 20px;
+        height: 20px;
+    }
+  }
